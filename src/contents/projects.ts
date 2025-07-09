@@ -1,4 +1,7 @@
-export const projects = [
+import { Project } from "@/types";
+
+export const projects: Project[] = [
+  //this is an array of projects
   {
     title: "E-commerce Platform",
     description:
