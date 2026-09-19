@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./context/ThemeContext";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,10 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Devfolio | Portfolio Website using Next.js, Tailwind CSS, and Framer Motion",
+  title: "Srimali JayaweeraArachchi | Software Engineer",
   description:
-    "Devfolio is a portfolio website for developers to showcase their projects and skills.",
+    "Portfolio of Srimali JayaweeraArachchi, a Computer Engineering graduate candidate and full-stack software engineer.",
 };
 
 export default function RootLayout({
@@ -30,13 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-white transition-colors dark:bg-gray-900 dark:text-white ${geistSans.variable} ${geistMono.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider>
-          <Navbar />
-          <main className="min-h-screen pt-24">{children}</main>
-          <Footer />
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );
