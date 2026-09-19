@@ -10,8 +10,8 @@ export default function Newsletter() {
                   Subscribe to My Newsletter
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Get the latest updates on my projects, blog posts, and tech
-                  insights delivered straight to your inbox.
+                  Get occasional updates on my projects and technical work
+                  delivered straight to your inbox.
                 </p>
               </div>
               <form className="flex flex-col sm:flex-row gap-4">
