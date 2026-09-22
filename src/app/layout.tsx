@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Srimali JayaweeraArachchi | Software Engineer",
+  title: "Srimali JayaweeraArachchi | Full-Stack Software Engineer",
   description:
-    "Portfolio of Srimali JayaweeraArachchi, a Computer Engineering graduate candidate and full-stack software engineer.",
+    "Portfolio of Srimali JayaweeraArachchi, a Computer Engineering graduate candidate building full-stack, AI, and cloud-enabled products.",
 };
 
 export default function RootLayout({
